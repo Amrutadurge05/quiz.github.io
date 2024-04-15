@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz App</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  
+body {
+  font-family:cursive;
+  background-color:#ccedec;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color:#8094cf;
+  border-radius: 20px;
+   box-shadow:0 0 10px rgba(2, 5, 30, 0.8);
+text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.question {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.option {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-size: 16px;
+}
+
+.option:hover {
+  background-color: #ddd;
+}
+
+.feedback {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  color:white;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Quiz App</h1>
+  <div id="question" class="question"></div>
+  <div id="options" class="options"></div>
+  <button id="submit">Submit</button>
+  <div id="feedback" class="feedback"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
